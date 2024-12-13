@@ -1,4 +1,4 @@
-# Create T3 App (re-config) 
+# Create T3 App (re-config)  [Next.js 15 | React 19]
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
