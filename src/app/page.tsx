@@ -12,21 +12,17 @@
 //   );
 // }
 
+"use client"; // only for client-side code
 
-
-"use client" // only for client-side code
-
-import {clientApi} from "@/server/trpc/client.api";
+import { clientApi } from "@/server/trpc/client.api";
 export default function Home() {
   const res = clientApi.TEST.hello.useQuery();
   return (
     <>
-    <h2>
-      {res.isLoading && (
-          <p>Loading...</p>
-      )}
-      {res.data?.message}
-    </h2>
+      <h2>
+        {res.isLoading && <p>Loading...</p>}
+        {res.data?.message}
+      </h2>
     </>
   );
 }
